@@ -1,5 +1,5 @@
 # Fourier_Image_Stenography
-A set of programs that use the 2D-FFT of RGB channels, Error Correcting Codes and Nueral Networks to embed and extract files from within an image.
+A set of programs that use the 2D-FFT of RGB channels, Error Correcting Codes and Nuaeral Networks to embed and extract files from within an image with maximum performance and accuracy.
 
 TL;DR:
 "sten_ldpc_and_fft_model.py" - Uses ldpc with the addition of a Nueral Network based Model that predicts the optimal M for each channel of each block in record time to increase preformance.
