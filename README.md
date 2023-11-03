@@ -2,7 +2,7 @@
 A set of programs that use the 2D-FFT of RGB channels, Error Correcting Codes and Neural Networks to embed and extract files from within an image with maximum performance and accuracy.
 
 TL;DR:
-"sten_ldpc_and_fft_model.py" - Uses ldpc with the addition of a Nueral Network based Model that predicts the optimal M for each channel of each block in record time to increase preformance.
+"sten_ldpc_and_mag2.py" - Uses ldpc and the mag2 approch. THIS IS THE RECOMMENDED VERSION - I managed to embed the entire "The Sign Of Four" book in 5.5 hours and extract it in 0.5 hours only, WITH NO ERROS, using a large image.
 
 Usage:
 Embed:
@@ -33,7 +33,7 @@ The different "sten" python files correspond to the different ways of choosing M
 
 "sten_mag2.py" - Uses arbitrary block size and chooses the optimal integer M within a certain range for each two bits embedded in each channel of each block using a Brute-Force approach.
 
-"sten_ldpc_and_mag2.py" - Uses ldpc and the mag2 approch. THIS IS THE RECOMMENDED VERSION - I managed to embed the entire "The Sign Of Four" book in 5.5 hours and extract it in 0.5 hours only, WITH NO ERROS.
+"sten_ldpc_and_mag2.py" - Uses ldpc and the mag2 approch. THIS IS THE RECOMMENDED VERSION - I managed to embed the entire "The Sign Of Four" book in 5.5 hours and extract it in 0.5 hours only, WITH NO ERROS, using a large image.
 
 "sten_ldpc_and_fft_model.py" - Uses ldpc with the addition of a Nueral Network based Model that predicts the optimal M for each channel of each block in record time to increase preformance.
 
