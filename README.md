@@ -18,6 +18,10 @@ Then, For each channel we apply the FFT2, set the complex coefficient correspond
 complex(+-M,+-M) where M is some positive real number (The sign of each of the real of imaginary components encodes a single bit).
 Then, the Inverse Transform is applied to get a valid channel, and saved into the original image.
 
+A valid channel consists of a 2D matrix of bytes, which requires taking the absolute value of the complex numbers in the output of the ifft2,
+then applying a modulo 256 on the result, which creates A NOISY CHANNEL with spontaneous bursts, thus making ldpc a good canditate for error correction, 
+as it is used in WiFi protocols, which have to deal with similar challenges.
+
 The output image is saved into the file <original_name_without_ext>_s.bpm, to ensure a lossless compression 
 (The accuracy of the extracted file using lossy compression algorithms such as jpg was not checked but might work to some degree)
 
