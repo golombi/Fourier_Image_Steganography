@@ -11,7 +11,7 @@ Extract:
 python3 sten_ldpc_and_mag2.py court_s.bmp -o long_output.txt 
 
 
-Through this self-study project I developed my own stenography algorithm, improving it with every version.
+Through this self-study project I developed my own steganography algorithm, improving it with every version.
 
 The basic idea is to divide the image to 2D blocks of uniform size, which are then split to the 3 RGB channels.
 Then, For each channel we apply the FFT2, set the complex coefficient corresponding to the highest frequency (To minimize visible changes) to be
@@ -22,7 +22,7 @@ A valid channel consists of a 2D matrix of bytes, which requires taking the abso
 then applying a modulo 256 on the result, which creates A NOISY CHANNEL with spontaneous bursts, thus making ldpc a good canditate for error correction, 
 as it is used in WiFi protocols, which have to deal with similar challenges.
 
-The output image is saved into the file <original_name_without_ext>_s.bpm, to ensure a lossless compression 
+The output image is saved into the file <original_name_without_ext>_s.bmp, to ensure a lossless compression 
 (The accuracy of the extracted file using lossy compression algorithms such as jpg was not checked but might work to some degree)
 
 The decoding process is clear from the description above.
