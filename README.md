@@ -1,4 +1,4 @@
-# Fourier_Image_Stenography
+# Fourier_Image_Steganography
 A set of programs that use the 2D-FFT of RGB channels, Error Correcting Codes and Neural Networks to embed and extract files from within an image with maximum performance and accuracy.
 
 TL;DR:
